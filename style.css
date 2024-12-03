@@ -158,3 +158,20 @@ section{
     height: 50%;
     width: 18%;
 }
+
+.construction-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.construction-footer{
+    background: linear-gradient(
+        270deg,
+        #D242FF 10%,
+        #20D4F6 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
