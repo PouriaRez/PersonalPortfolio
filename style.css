@@ -176,26 +176,11 @@ section{
 }
 
 .tech-stack-track img {
+    position: relative;
     height: 50%;
     width: 18%;
 }
 
-.construction-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.construction-footer{
-    background: linear-gradient(
-        270deg,
-        #D242FF 10%,
-        #20D4F6 100%
-    );
-    background-clip: text;
-    color: transparent;
-}
 
 ::-webkit-scrollbar{
     width: 1rem;
@@ -225,20 +210,13 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    place-items: center;
     gap: 2rem;
     row-gap: 3rem;
 }
 
-.project-desc{
-    max-height: 200px;
-    font-size: 1.2rem;
-    overflow-y: scroll;
-
-}
-
 .project-card{
     display: flex;
+    
     max-width: 25vw;
     flex-direction: column;
     justify-content: center;
@@ -252,12 +230,12 @@ section{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
-    transition: 0.3 ease-in-out;
+    transition: 0.3s ease-in-out;
     height: 100%;
 }
 
 .project-card:hover{
-    box-shadow: 0 0 25px var(--main-color)
+    box-shadow: 0 0 25px var(--main-color),
                 0  0 50px var(--main-color);
     transform: scale(1.02);
 }
@@ -272,7 +250,56 @@ section{
     font-size: 3rem;
 }
 
-.project-card p {
+.project-desc{
+    max-height: 200px;
     font-size: 1.2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: .5rem;
 }
 
+.btn {
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    background: linear-gradient(
+        270deg,
+        #D242FF 10%,
+        #20D4F6 100%
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+
+
+
+.construction-container{
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.construction-footer{
+    background: linear-gradient(
+        270deg,
+        #D242FF 10%,
+        #20D4F6 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
