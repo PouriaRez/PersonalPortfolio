@@ -221,15 +221,25 @@ section{
 }
 
 .projects-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(500px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     place-items: center;
-    gap: 1rem;
+    gap: 2rem;
     row-gap: 3rem;
+}
+
+.project-desc{
+    max-height: 200px;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+
 }
 
 .project-card{
     display: flex;
+    max-width: 25vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
