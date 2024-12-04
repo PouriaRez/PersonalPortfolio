@@ -15,3 +15,11 @@ navbarLinks.forEach(link => {
         menuIcon.classList.remove('bx-x'); // Optionally reset the menu icon
     }
 });
+
+//handling clicks on project cards
+document.querySelectorAll('.project-btn').forEach(card => {
+    card.addEventListener('click', () => {
+        const url = card.getAttribute('data-url'); // Get URL from data attribute
+        window.open(url, '_blank') //opens in new tab
+    });
+});
