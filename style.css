@@ -552,3 +552,19 @@ section{
     }
 
 }
+
+@media(max-width: 474px) {
+    .navbar{
+        width: 80vw;
+    }
+    .home-img img {
+        width: 85vw;
+    }
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+}
