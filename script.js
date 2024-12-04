@@ -17,12 +17,11 @@ navbarLinks.forEach(link => {
 });
 
 //handling clicks on project cards
-let projectBtn = document.querySelectorAll('project-btn');
-
-projectBtn.forEach(card => {
-    card.addEventListener('click', () => {
-        const url = card.getAttribute('data-url'); // Get URL from data attribute
-        window.open(url, '_blank') //opens in new tab
+const projectButtons = document.querySelectorAll('.project-btn');
+projectButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const projectUrl = button.getAttribute('data-url');
+        window.open(projectUrl, '_blank'); // Opens the URL in a new tab        
     });
 });
 
