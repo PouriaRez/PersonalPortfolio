@@ -411,8 +411,10 @@ section{
 
     }
 }
-
 @media(max-width: 1024px) {
+    .home-img img {
+        width: 40vw;
+    }
     .home-content h1 span {
         display: flex;
     }
@@ -434,6 +436,10 @@ section{
         width: 100%;
     }
 
+    .tech-stack-track{
+        margin: 0;
+    }
+    
     .tech-stack-track img {
         width: 20%;
     }
@@ -449,21 +455,26 @@ section{
     .story-text h3{
         text-align: center;
     }
-
 }
 
 
 @media(max-width: 985px) {
+
     #menu-icon{
         display: block;
     }
+
+    .logo span{
+        padding-left: 0.5rem;   
+    }
+
     .navbar{
         position: absolute;
         top: 100%;
         right: 0;
         width: 50%;
         padding: 1rem 3rem;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.8);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
@@ -493,6 +504,8 @@ section{
         align-items: center;
         text-align: center;
     }
+
+
     .home-img img {
         margin-top: 6rem;
         width: 56vw;
@@ -513,4 +526,29 @@ section{
         max-width: 70vw;
 
     }
+}
+
+@media(max-width: 625px) {
+    body{
+        overflow: hidden;
+    }
+    .home{
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .home-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .tech-stack-track{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
 }
