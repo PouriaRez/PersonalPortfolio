@@ -1,7 +1,17 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let navbarLinks = document.querySelectorAll('.navbar a'); // Select all navbar links
 
+//Open the burger menu to show the nav bar
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active')
+    menuIcon.classList.toggle('bx-x') //Display an X to close navbar
+    navbar.classList.toggle('active') // Activate the navbar.
 }
+
+// Close the navbar when any link inside the navbar is clicked
+navbarLinks.forEach(link => {
+    link.onclick = () => {
+        navbar.classList.remove('active'); // Close the navbar
+        menuIcon.classList.remove('bx-x'); // Optionally reset the menu icon
+    }
+});
