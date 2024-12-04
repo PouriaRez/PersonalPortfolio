@@ -77,7 +77,6 @@ span{
 }
 
 .navbar a:hover{
-    color: var(--main-color);
     font-weight: 700;
     border-bottom: 3px solid var(--main-color);
 }
@@ -148,6 +147,38 @@ section{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
+}
+
+.typewriter-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.typewriter-box{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.typewriter{
+    font-size: 3rem;
+    border-right: 2px solid;
+    padding-right: 3px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 1.5s,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {width: 0}
 }
 
 .tech-stack-container{
@@ -284,27 +315,6 @@ section{
                 0 0 50px var(--main-color);
 }
 
-
-
-
-.construction-container{
-    background: var(--second-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.construction-footer{
-    background: linear-gradient(
-        270deg,
-        #D242FF 10%,
-        #20D4F6 100%
-    );
-    background-clip: text;
-    color: transparent;
-}
-
 .story-content{
     display: flex;
     justify-content: center;
@@ -336,3 +346,64 @@ section{
 .story-text p {
     font-weight: 300;
 }
+
+
+.footer{
+    background: var(--second-bg-color);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 10%;
+    color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    margin: 0.3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--text-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+}
+
+
+.footer ul {
+    font-size: 1.2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem 1rem;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.1s ease-in-out;
+}
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer .copyright {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
