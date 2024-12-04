@@ -248,7 +248,6 @@ section{
 
 .project-card{
     display: flex;
-    
     max-width: 25vw;
     flex-direction: column;
     justify-content: center;
@@ -383,7 +382,6 @@ section{
     transform: scale(1.2) translateY(-5px);
 }
 
-
 .footer ul {
     font-size: 1.2rem;
 }
@@ -407,3 +405,112 @@ section{
     margin-top: 0.5rem;
 }
 
+@media(max-width:1440px) {
+    .project-card{
+        max-width: 50vw;
+
+    }
+}
+
+@media(max-width: 1024px) {
+    .home-content h1 span {
+        display: flex;
+    }
+    .typewriter-container{
+        flex-direction: column;
+    }
+    .media-size-fix{
+        display: flex;
+        justify-content: center;
+    }
+    .typewriter-box{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        margin-top: -2rem;
+    }
+
+    .tech-stack-container{
+        width: 100%;
+    }
+
+    .tech-stack-track img {
+        width: 20%;
+    }
+
+    .story-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portrait-pic{
+        width: 50vw;
+    }
+    .story-text h3{
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width: 985px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.4);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        height: 100vh;
+        display: none;
+    }
+    .navbar a {
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gradient-btn{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img img {
+        margin-top: 6rem;
+        width: 56vw;
+    }
+    .home-content h1  {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+    }
+    .project-card{
+        max-width: 70vw;
+
+    }
+}
