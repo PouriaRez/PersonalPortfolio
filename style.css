@@ -136,7 +136,7 @@ section{
     margin: 1rem 0;
 }
 
-.home-img img {
+.home-img img{
     width: 32vw;
     border-radius: 50%;
     margin: 0 3rem;
@@ -196,6 +196,7 @@ section{
 }
 
 .heading{
+    word-spacing: -1rem;
     text-align: center;
     font-size: 5rem;
     margin: 1rem 0;
@@ -302,4 +303,37 @@ section{
     );
     background-clip: text;
     color: transparent;
+}
+
+.story-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-pic{
+    width: 40vw;
+    border-radius: 10%;
+    margin: 1rem 3rem;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3S ease-in-out;
+}
+
+.portrait-pic:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+
+.story-text h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.story-text p {
+    font-weight: 300;
 }
