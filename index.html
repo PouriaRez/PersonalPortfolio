@@ -1,171 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pouria Rezaei</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="header">
+      <a href="#home" class="logo">Pouria <span>Rezaei</span></a>
 
-        <a href="#home" class="logo">Pouria <span>Rezaei</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#mystory">About </a>
+      </nav>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#mystory">About  </a>
-        </nav>
-
-        <button id="contact-me-btn" class="gradient-btn">Contact Me</button>
-
+      <button id="contact-me-btn" class="gradient-btn">Contact Me</button>
     </header>
 
-
     <section class="home" id="home">
-        <div class="home-content">  
+      <div class="home-content">
+        <h1>Hi, It's <span>Pouria</span></h1>
 
-            <h1>Hi, It's <span>Pouria</span></h1>
-
-            <div class="typewriter-container">
-                <h3 class="media-size-fix">I'm a</h3>
-                <div class="typewriter-box">
-                    <h3 class="typewriter"><span>Software Developer</span></h3>
-                </div>
-            </div>
-
-            <div class="tech-stack-container">
-                <div class="tech-stack-track">
-                    <img src="./assets/images/html.svg" alt="HTML" data-desc="HTML" />
-                    <img src="./assets/images/css.svg" alt="CSS" data-desc="HTML" />
-                    <img src="./assets/images/javascript.svg" alt="JavaScript" data-desc="HTML" />
-                    <img src="./assets/images/react.svg" alt="React" data-desc="HTML" />
-                    <img src="./assets/images/typescript.svg" alt="TypeScript" data-desc="HTML" />
-                    <img src="./assets/images/angular.svg" alt="Angular" data-desc="HTML" />
-                    <img src="./assets/images/c++.svg" alt="C++" data-desc="HTML" />
-                    <img src="./assets/images/python.svg" alt="Python" data-desc="HTML" />
-                </div>
-            </div>
+        <div class="typewriter-container">
+          <h3 class="media-size-fix">I'm a</h3>
+          <div class="typewriter-box">
+            <h3 class="typewriter"><span>Software Developer</span></h3>
+          </div>
         </div>
 
-        <div class="home-img">
-            <img class="portrait-pic" src="./assets/images/self.jpg" alt="">
+        <div class="tech-stack-container">
+          <div class="tech-stack-track">
+            <img src="./assets/images/html.svg" alt="HTML" data-desc="HTML" />
+            <img src="./assets/images/css.svg" alt="CSS" data-desc="HTML" />
+            <img
+              src="./assets/images/javascript.svg"
+              alt="JavaScript"
+              data-desc="HTML"
+            />
+            <img src="./assets/images/react.svg" alt="React" data-desc="HTML" />
+            <img
+              src="./assets/images/typescript.svg"
+              alt="TypeScript"
+              data-desc="HTML"
+            />
+            <img
+              src="./assets/images/angular.svg"
+              alt="Angular"
+              data-desc="HTML"
+            />
+            <img src="./assets/images/c++.svg" alt="C++" data-desc="HTML" />
+            <img
+              src="./assets/images/python.svg"
+              alt="Python"
+              data-desc="HTML"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="home-img">
+        <img class="portrait-pic" src="./assets/images/self.jpg" alt="" />
+      </div>
     </section>
 
-
     <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
+      <h2 class="heading">Projects</h2>
 
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="./assets/images/lockin.png" alt="">
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./assets/images/lockin.png" alt="" />
 
-                <h3>LockIn</h3>
-                <div class="project-desc"> 
-                        LockIn is a productivity app developed by our team as part of the Google Developers Club (GDC) at UCSC for a quarter-long hackathon,
-                         competing against other GDC teams. Designed for students and entrepreneurs, 
-                         LockIn combines social media elements with a unique progress tracking system. 
-                         Users can capture and share daily photos of their work, whether it's academic,
-                         business-related, or personal, and showcase their progress to friends and family.
-                         By setting daily goals and receiving social encouragement,
-                         LockIn helps users stay on track while building a community that celebrates productivity.  
-                </div>
-                <div class="project-btn" data-url="https://github.com/app-lockin-ucsc/Lockin-app">View Project</div>
-            </div>   
-            <div class="project-card">
-                <img src="./assets/images/t4g.png" alt="">
-
-                <h3>Tech4Good</h3>
-
-                <div class="project-desc"> 
-                    Developing expertise involves tacit knowledge that can only be acquired through real-world situated practice.
-                     But internships and other forms of apprenticeship learning are hard to scale and inaccessible to those with little prior experience.
-                      To address this, we are building Causeway, an app based on a structure we call micro-role hierarchies.
-                       Causeway allows anyone to work on small roles that contribute to real-world projects and that sequence predictably to professional skills.
-                        In a pilot, we showed that novices were able to successfully build 3 static views of webapps for non-profits. We are now exploring how to extend this as a powerful medium for learning and for supporting community causes.
-                </div>
-                <div class="project-btn"  data-url="https://tech4good.soe.ucsc.edu/">View Project</div>
-            </div>
+          <h3>LockIn</h3>
+          <div class="project-desc">
+            LockIn is a productivity app developed by our team as part of the
+            Google Developers Club (GDC) at UCSC for a quarter-long hackathon,
+            competing against other GDC teams. Designed for students and
+            entrepreneurs, LockIn combines social media elements with a unique
+            progress tracking system. Users can capture and share daily photos
+            of their work, whether it's academic, business-related, or personal,
+            and showcase their progress to friends and family. By setting daily
+            goals and receiving social encouragement, LockIn helps users stay on
+            track while building a community that celebrates productivity.
+          </div>
+          <div
+            class="project-btn"
+            data-url="https://github.com/app-lockin-ucsc/Lockin-app"
+          >
+            View Project
+          </div>
         </div>
+        <div class="project-card">
+          <img src="./assets/images/t4g.png" alt="" />
 
+          <h3>Tech4Good</h3>
+
+          <div class="project-desc">
+            Developing expertise involves tacit knowledge that can only be
+            acquired through real-world situated practice. But internships and
+            other forms of apprenticeship learning are hard to scale and
+            inaccessible to those with little prior experience. To address this,
+            we are building Causeway, an app based on a structure we call
+            micro-role hierarchies. Causeway allows anyone to work on small
+            roles that contribute to real-world projects and that sequence
+            predictably to professional skills. In a pilot, we showed that
+            novices were able to successfully build 3 static views of webapps
+            for non-profits. We are now exploring how to extend this as a
+            powerful medium for learning and for supporting community causes.
+          </div>
+          <div class="project-btn" data-url="https://tech4good.soe.ucsc.edu/">
+            View Project
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="slugicon" src="./assets/images/slug.ico" alt="" />
+
+          <h3>Slack</h3>
+
+          <div class="project-desc">
+            Developing production-grade software skills requires real-world
+            experience that is often difficult to obtain without prior exposure.
+            To bridge this gap, I built a full-stack Slack clone—a messaging
+            platform modeled after real-world team collaboration tools. The
+            project uses React and Material UI to create a responsive,
+            accessible interface, with Node.js and Express powering the backend
+            APIs, fully documented via OpenAPI. I integrated a PostgreSQL
+            database to manage users, messages, and channels with relational
+            integrity. This project gave me hands-on experience with scalable
+            architecture, component-based UI design, RESTful API development,
+            and database modeling, closely simulating the workflow of modern
+            professional software teams.
+          </div>
+          <div class="project-btn" data-url="https://github.com/pouriaRez/">
+            View Project
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="mystory" id="mystory">
-        <h2 class="heading">My <span>Story</span></h2>
-        <div class="story-content">
-                <img class="portrait-pic" src="./assets/images/google-self.jpg" alt="Me at Google!">
-                <div class="story-text">
-                    <h3>From Curiosity to Creation</h3>
-                        <p>Ever since I was a child, I’ve been fascinated by computers. 
-                            What started as hours spent playing around with machines turned into a lifelong passion for technology. 
-                            This curiosity laid the foundation for my journey into software development and computer science.
-                        </p>
-                    <h3>Education and Growth</h3>
-                        <p>
-                            I’m currently pursuing a Bachelor of Science in Computer Science at the University of California, Santa Cruz (UCSC).
-                             My academic journey has been both challenging and rewarding, as I dive deep into topics like algorithms, data structures, and software engineering. 
-                             Despite the occasional hurdles—like late nights debugging code—
-                             I remain motivated by the excitement of solving problems and building tools that make an impact.
-                        </p>
-                    <h3>Skills and Expertise</h3>
-                        <p>
-                            I’ve developed strong skills in C, C++, Python, HTML, CSS, JavaScript, 
-                            and frameworks like ReactJS, React Native, Angular, and TypeScript.
-                             I’m experienced with tools like Tailwind CSS, PostCSS, and Bootstrap to build responsive interfaces.
-                              With a focus on full-stack development, I integrate front-end designs with back-end solutions.
-
-                        </p>
-                    <h3>Vision</h3>
-                        <p>
-                            I aspire to use my skills to create software solutions that make a difference—whether through automating tasks,
-                            enhancing user experiences, or solving real-world problems.
-                             My portfolio showcases projects that align with this vision and demonstrate my growth as a developer.
-                        </p>
-                    <h3>Continuous Learning</h3>
-                    <p>
-                        Technology never stands still, and neither do I.
-                         Every day, I dedicate time to improving my skills, exploring new tools, and staying updated with industry trends.
-                          I believe that growth is a continuous process, and I’m excited about the journey ahead.
-                    </p>
-                </div>
+      <h2 class="heading">My <span>Story</span></h2>
+      <div class="story-content">
+        <img
+          class="portrait-pic"
+          src="./assets/images/google-self.jpg"
+          alt="Me at Google!"
+        />
+        <div class="story-text">
+          <h3>From Curiosity to Creation</h3>
+          <p>
+            Ever since I was a child, I’ve been fascinated by computers. What
+            started as hours spent playing around with machines turned into a
+            lifelong passion for technology. This curiosity laid the foundation
+            for my journey into software development and computer science.
+          </p>
+          <h3>Education and Growth</h3>
+          <p>
+            I’m currently pursuing a Bachelor of Science in Computer Science at
+            the University of California, Santa Cruz (UCSC). My academic journey
+            has been both challenging and rewarding, as I dive deep into topics
+            like algorithms, data structures, and software engineering. Despite
+            the occasional hurdles—like late nights debugging code— I remain
+            motivated by the excitement of solving problems and building tools
+            that make an impact.
+          </p>
+          <h3>Skills and Expertise</h3>
+          <p>
+            I’ve developed strong skills in C, C++, Python, HTML, CSS,
+            JavaScript, and frameworks like ReactJS, React Native, Angular, and
+            TypeScript. I’m experienced with tools like Tailwind CSS, PostCSS,
+            and Bootstrap to build responsive interfaces. With a focus on
+            full-stack development, I integrate front-end designs with back-end
+            solutions.
+          </p>
+          <h3>Vision</h3>
+          <p>
+            I aspire to use my skills to create software solutions that make a
+            difference—whether through automating tasks, enhancing user
+            experiences, or solving real-world problems. My portfolio showcases
+            projects that align with this vision and demonstrate my growth as a
+            developer.
+          </p>
+          <h3>Continuous Learning</h3>
+          <p>
+            Technology never stands still, and neither do I. Every day, I
+            dedicate time to improving my skills, exploring new tools, and
+            staying updated with industry trends. I believe that growth is a
+            continuous process, and I’m excited about the journey ahead.
+          </p>
         </div>
-
+      </div>
     </section>
 
-
     <footer class="footer">
-        <div class="social-icons">
-                
-            <a href="https://github.com/pouriaRez" target="_blank">
-                <i class="bx bxl-github"></i>
-            </a> 
-            <a href="https://www.linkedin.com/in/pouriarez" target="_blank">
-                <i class="bx bxl-linkedin-square"></i>
-            </a> 
-            <a href="https://www.instagram.com/pouria.rez_/" target="_blank">
-                <i class="bx bxl-instagram-alt"></i>
-            </a>
+      <div class="social-icons">
+        <a href="https://github.com/pouriaRez" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pouriarez" target="_blank">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="https://www.instagram.com/pouria.rez_/" target="_blank">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+      </div>
 
-        </div>  
-        
-        <ul class="list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#mystory">About</a></li>
-        </ul>
+      <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#mystory">About</a></li>
+      </ul>
 
-        <p class="copyright">&copy; Pouria Rezaei | All Rights Reserved</p>
-        
+      <p class="copyright">&copy; Pouria Rezaei | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
